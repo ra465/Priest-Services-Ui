@@ -1,0 +1,83 @@
+.ritual-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.ritual-category {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #d93e00;
+  margin-bottom: 20px;
+  font-family: "Inter";
+}
+
+.ritual-grid {
+  display: flex;
+   height:249;
+   width: 302;
+  flex-wrap: nowrap;
+  gap:50px;
+}
+.ritual-card {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  width: 28%;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.ritual-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.ritual-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-family: "Inter";
+}
+
+.ritual-card p {
+  font-size: 1rem;
+  color: #333;
+  font-family: "Inter";
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .ritual-grid {
+    flex-direction: column;       
+    flex-wrap: nowrap;
+    gap: 20px;                   
+    align-items: center;         
+  }
+
+  .ritual-card {
+    width: 90%;                  
+    max-width: 400px;
+    text-align: center;           
+  }
+
+  .ritual-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .ritual-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .category-title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+

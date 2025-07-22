@@ -1,0 +1,137 @@
+.locations-section {
+  padding: 80px;
+  background-color: #fff;
+}
+
+.locations-section h2 {
+  color: #E93E00;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-family: "Inter";
+}
+
+.locations-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.locations-left {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.location-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #FEFCFC;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.location-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.view-button {
+  margin-top: 24px;
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.locations-right {
+  flex: 1;
+  min-width: 320px;
+}
+
+.map-image {
+  width: 90%;
+  height: auto;
+ margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+@media (max-width: 768px) {
+  .locations-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .locations-section h2 {
+    font-size: 2rem;
+    padding-right: 30px;
+  }
+
+  .locations-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .locations-left,
+  .locations-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    padding-right: 60px;
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr; 
+    gap: 12px;
+  }
+
+  .location-item {
+    font-size: 1rem;
+    justify-content: left;
+  }
+
+  .location-item img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .view-button {
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-right: 200px;
+  }
+
+  .map-image {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+}

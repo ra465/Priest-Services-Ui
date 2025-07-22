@@ -1,0 +1,111 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.testimonial-section {
+  background: linear-gradient(to bottom, #ffd4bc, #ffd8a1);
+  padding: 60px 0;
+}
+
+.testimonial-heading {
+  text-align: center;
+  color: #E93E00;
+  font-size: 3rem;
+  font-family: "Playfair";
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.testimonial-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #ffa94d;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-quote {
+  position: relative;
+  padding-left: 0;
+}
+
+.quote-icon {
+  color: #FF4400;
+  font-size: 30px;
+  font-family: monospace;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.testimonial-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-right: 10px;
+  border: 2px solid white;
+}
+
+.name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.designation {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #333;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #CC8351;
+  transition: background 0.3s;
+}
+
+.dots span.active {
+  background: #FF4400;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-row {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    max-width: 90%;
+  }
+}
